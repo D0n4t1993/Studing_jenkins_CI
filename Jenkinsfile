@@ -1,4 +1,4 @@
-node {
+node('linux_node1_ssh') {
     stage('Deploy') {
         retry(3) {
             sh './flakey-deploy.sh'
